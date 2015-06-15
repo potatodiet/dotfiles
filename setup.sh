@@ -11,11 +11,21 @@ ln -s -f $(realpath .vimrc) $(realpath ~/.vimrc)
 vim +PluginInstall +qall
 
 # rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+if ! grep "rbenv/bin" ~/.bashrc; then
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+fi
 source ~/.bashrc
 if ! rbenv versions | grep -q 2.2.2; then
   CONFIGURE_OPTS="--with-readline-dir=/usr/include/readline" rbenv install 2.2.2
   rbenv global 2.2.2
 fi
+
+# Fonts
+mkdir ~/.fonts
+cd /tmp
+wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz
+tar -xzf 1.017R.tar.gz
+mv source-code-pro-1.017R/TTF/SourceCodePro-Regular.ttf ~/.fonts/SourceCodePro-Regular.ttf
+# I need to find a way to automatically set terminl font.
 
