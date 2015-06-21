@@ -24,6 +24,10 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-haml'
 
+" Strips trailing whitespace.
+Plugin 'csexton/trailertrash.vim'
+autocmd BufWritePre * TrailerTrim
+
 " All Vundle plugins must be above this line.
 call vundle#end()
 filetype plugin indent on
