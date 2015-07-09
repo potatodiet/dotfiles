@@ -18,6 +18,9 @@ call vundle#begin()
 " let Vundle manage Vundle.
 Plugin 'gmarik/Vundle.vim'
 
+" Autocompletion
+Plugin 'Valloric/YouCompleteMe'
+
 " Git plugin.
 Plugin 'tpope/vim-fugitive'
 

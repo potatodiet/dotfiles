@@ -35,3 +35,6 @@ tar -xzf 1.017R.tar.gz
 mv source-code-pro-1.017R/TTF/SourceCodePro-Regular.ttf ~/.fonts/SourceCodePro-Regular.ttf
 # I need to find a way to automatically set terminl font.
 
+~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
+sudo apt-get install python-dev
+
