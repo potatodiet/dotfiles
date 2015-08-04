@@ -1,5 +1,5 @@
 # Install applications
-sudo apt-get install vim git libssl-dev libreadline-dev doxygen
+sudo apt-get install vim git libssl-dev libreadline-dev doxygen cmake
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
