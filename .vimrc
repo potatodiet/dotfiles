@@ -33,6 +33,10 @@ Plugin 'tpope/vim-haml'
 " Haskell
 Plugin 'dag/vim2hs'
 
+" Rust
+Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
+
 " Strips trailing whitespace.
 Plugin 'csexton/trailertrash.vim'
 autocmd BufWritePre * TrailerTrim
@@ -49,3 +53,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:clang_format#command = 'clang-format-3.6'
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
+
+set hidden
+let g:racer_cmd = "/usr/local/racer/target/release/racer"
+let $RUST_SRC_PATH="/usr/local/src/rust/src"

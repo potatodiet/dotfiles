@@ -39,3 +39,13 @@ mv source-code-pro-1.017R/TTF/SourceCodePro-Regular.ttf ~/.fonts/SourceCodePro-R
 sudo apt-get install python-dev -y
 ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
 
+curl -sSf https://static.rust-lang.org/rustup.sh | sh
+
+# Rust autocomplete support in Vim
+cd /usr/local
+git clone https://github.com/phildawes/racer.git
+cd racer; cargo build --release
+
+cd /usr/local/src
+git clone https://github.com/rust-lang/rust.git
+
