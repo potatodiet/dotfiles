@@ -1,11 +1,13 @@
 # Install applications
-sudo apt-get install vim git libssl-dev libreadline-dev doxygen cmake ghc haskell-platform -y
+sudo apt-get install vim git libssl-dev libreadline-dev doxygen cmake ghc haskell-platform realpath -y
 sudo apt-get install clang clang-format-3.6 -y
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # The actual dotfiles
+# realpath needs the file to exist
+touch ~/.vimrc
 ln -s -f $(realpath .vimrc) $(realpath ~/.vimrc)
 
 # Initialize any programs
@@ -43,9 +45,11 @@ curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
 # Rust autocomplete support in Vim
 cd /usr/local
-git clone https://github.com/phildawes/racer.git
+sudo git clone https://github.com/phildawes/racer.git
+sudo chown justin:justin racer -R
 cd racer; cargo build --release
 
 cd /usr/local/src
-git clone https://github.com/rust-lang/rust.git
+sudo git clone https://github.com/rust-lang/rust.git
+sudo chown justin:justin rust -R
 
