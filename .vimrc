@@ -43,6 +43,8 @@ autocmd BufWritePre * TrailerTrim
 
 Plugin 'rhysd/vim-clang-format'
 
+Plugin 'leafgarland/typescript-vim'
+
 " All Vundle plugins must be above this line.
 call vundle#end()
 filetype plugin indent on
