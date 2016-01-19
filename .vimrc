@@ -55,6 +55,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:clang_format#command = 'clang-format-3.6'
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
+let g:clang_format#code_style = 'llvm'
 
 set hidden
 let g:racer_cmd = "/usr/local/racer/target/release/racer"
