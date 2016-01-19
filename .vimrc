@@ -60,3 +60,6 @@ let g:clang_format#code_style = 'llvm'
 set hidden
 let g:racer_cmd = "/usr/local/racer/target/release/racer"
 let $RUST_SRC_PATH="/usr/local/src/rust/src"
+
+" Load .vimrc in working directory.
+set exrc
