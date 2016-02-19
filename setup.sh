@@ -6,3 +6,5 @@
 ./cpp.sh
 ./fonts.sh
 
+./view.sh
+
