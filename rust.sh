@@ -1,4 +1,4 @@
-curl -sSf https://static.rust-lang.org/rustup.sh | sh -y
+sh <(curl -sSf https://static.rust-lang.org/rustup.sh) --yes
 
 # Rust autocomplete support in Vim
 cd /usr/local
