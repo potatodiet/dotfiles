@@ -5,6 +5,7 @@
 ./rust.sh
 ./cpp.sh
 ./fonts.sh
+./zsh.sh
 
 ./view.sh
 
