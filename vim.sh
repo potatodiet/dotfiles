@@ -1,7 +1,7 @@
 quiet_install vim python-devel cmake gcc-c++
 
 if [ ! -f ~/.vimrc ]; then
-  ln -s -f .vimrc ~/.vimrc
+  ln -sfn $(readlink -f .vimrc) $(readlink -f ~/.vimrc)
 fi
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
