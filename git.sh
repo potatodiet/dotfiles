@@ -1,4 +1,6 @@
-sudo apt-get install git -y
+#!/bin/bash
+
+quiet_install git
 
 git config --global core.excludesfile ~/.gitignore_global
 

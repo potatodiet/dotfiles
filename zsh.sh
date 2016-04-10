@@ -1,8 +1,10 @@
-sudo apt-get install zsh -y
+quiet_install zsh
 chsh -s /bin/zsh
 
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+if [ ! -d ~/.zsh/zsh-autosuggestions ]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+fi
 
-touch ~/.zshrc
-ln -s -f $(realpath .zshrc) $(realpath ~/.zshrc)
-source ~/.zshrc
+if [ ! -f ~/.zshrc ]; then
+  ln -sfn $(readlink -f .zshrc) $(readlink -f ~/.zshrc)
+fi

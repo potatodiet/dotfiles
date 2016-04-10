@@ -1,9 +1,12 @@
-sudo apt-get install vim realpath python-dev build-essential cmake -y
+quiet_install vim python-devel cmake gcc-c++
 
-touch ~/.vimrc
-ln -s -f $(realpath .vimrc) $(realpath ~/.vimrc)
+if [ ! -f ~/.vimrc ]; then
+  ln -s -f .vimrc ~/.vimrc
+fi
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 
 # Install bundler plugins
 vim +PluginInstall +qall
