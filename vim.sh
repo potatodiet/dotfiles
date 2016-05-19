@@ -1,4 +1,4 @@
-quiet_install vim python-devel cmake gcc-c++
+quiet_install vim cmake clang clang-tools-extra
 
 if [ ! -f ~/.vimrc ]; then
   ln -sfn $(readlink -f .vimrc) $(readlink -f ~/.vimrc)

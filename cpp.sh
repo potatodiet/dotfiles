@@ -1,1 +1,1 @@
-quiet_install cmake llvm-clang
+quiet_install cmake clang

@@ -17,5 +17,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # nvm
-export NVM_DIR="/home/justin/.nvm"
+export NVM_DIR="/usr/share/nvm/"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

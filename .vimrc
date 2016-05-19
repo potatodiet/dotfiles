@@ -2,7 +2,8 @@
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 " Show line numbers.
-set invnumber
+set number
+set relativenumber
 
 " Display line width marker
 set colorcolumn=80
