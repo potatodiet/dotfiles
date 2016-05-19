@@ -6,4 +6,4 @@ computer up and running. Specifically works with Arch Linux.
 Instructions
 ==============
 * Manually install pacaur
-* ` ./setup ``
+* ` ./setup `
