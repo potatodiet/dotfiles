@@ -6,9 +6,14 @@ set number
 set relativenumber
 
 " Display line width marker
-set colorcolumn=80
+set colorcolumn=100
+set textwidth=100
+
+" Turn on syntax highlighting
+syntax on
 
 command W w
+command Wq wq
 
 " Initialize Vundle
 set nocompatible
@@ -18,6 +23,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle.
 Plugin 'gmarik/Vundle.vim'
+
+" Lisp
+Plugin 'kovisoft/slimv'
+let g:lisp_rainbow = 1
 
 " Autocompletion
 Plugin 'Valloric/YouCompleteMe'
