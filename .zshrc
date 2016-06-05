@@ -2,6 +2,10 @@ autoload -Uz promptinit
 promptinit
 prompt suse
 
+# Autocompletion
+autoload -Uz compinit
+compinit
+
 # Needed for tabs to open in same directory.
 source /etc/profile.d/vte.sh
 
@@ -23,3 +27,5 @@ eval "$(rbenv init -)"
 export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/nvm.sh
 source /usr/share/nvm/install-nvm-exec
+
+PATH=~/Workspace/scripts:$PATH
