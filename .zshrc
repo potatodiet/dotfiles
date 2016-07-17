@@ -28,4 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/nvm.sh
 source /usr/share/nvm/install-nvm-exec
 
-PATH=~/Workspace/scripts:$PATH
+export PATH="$HOME/Workspace/scripts:$PATH"
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
