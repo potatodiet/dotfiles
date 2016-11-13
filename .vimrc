@@ -11,6 +11,8 @@ set textwidth=100
 
 " Turn on syntax highlighting
 syntax on
+set background=dark
+colorscheme solarized
 
 command W w
 command Wq wq
@@ -24,9 +26,14 @@ call vundle#begin()
 " let Vundle manage Vundle.
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'vim-airline/vim-airline'
+set laststatus=2
+
 " Lisp
 Plugin 'kovisoft/slimv'
 let g:lisp_rainbow = 1
+
+Plugin 'altercation/vim-colors-solarized'
 
 " Autocompletion
 Plugin 'Valloric/YouCompleteMe'

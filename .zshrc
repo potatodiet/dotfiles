@@ -1,6 +1,6 @@
 autoload -Uz promptinit
 promptinit
-prompt suse
+prompt redhat
 
 # Autocompletion
 autoload -Uz compinit
@@ -32,3 +32,5 @@ export PATH="$HOME/Workspace/scripts:$PATH"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export TERM=xterm-256color
