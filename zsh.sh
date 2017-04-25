@@ -1,4 +1,4 @@
-quiet_install zsh
+sudo dnf install -y zsh
 chsh -s /bin/zsh
 
 if [ ! -d ~/.zsh/zsh-autosuggestions ]; then

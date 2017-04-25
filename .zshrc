@@ -25,8 +25,7 @@ eval "$(rbenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-source /usr/share/nvm/nvm.sh
-source /usr/share/nvm/install-nvm-exec
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 export PATH="$HOME/Workspace/scripts:$PATH"
 

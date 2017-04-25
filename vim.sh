@@ -1,4 +1,4 @@
-quiet_install vim cmake clang clang-tools-extra
+sudo dnf install -y vim cmake clang python-devel
 
 if [ ! -f ~/.vimrc ]; then
   ln -sfn $(readlink -f .vimrc) $(readlink -f ~/.vimrc)

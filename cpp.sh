@@ -1,1 +1,1 @@
-quiet_install cmake clang
+sudo dnf install -y cmake clang
