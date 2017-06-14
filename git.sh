@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install -y git
+sudo pacman -Syu --noconfirm git
 
 git config --global core.excludesfile ~/.gitignore_global
 

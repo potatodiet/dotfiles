@@ -1,4 +1,4 @@
-sudo dnf install -y vim cmake clang python-devel
+sudo pacman -Syu --noconfirm vim
 
 if [ ! -f ~/.vimrc ]; then
   ln -sfn $(readlink -f .vimrc) $(readlink -f ~/.vimrc)
@@ -10,5 +10,3 @@ fi
 
 # Install bundler plugins
 vim +PluginInstall +qall
-
-~/.vim/bundle/YouCompleteMe/install.sh --clang-completer

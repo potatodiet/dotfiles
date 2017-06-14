@@ -35,9 +35,6 @@ let g:lisp_rainbow = 1
 
 Plugin 'altercation/vim-colors-solarized'
 
-" Autocompletion
-Plugin 'Valloric/YouCompleteMe'
-
 " Git plugin.
 Plugin 'tpope/vim-fugitive'
 
@@ -65,9 +62,6 @@ Plugin 'leafgarland/typescript-vim'
 " All Vundle plugins must be above this line.
 call vundle#end()
 filetype plugin indent on
-
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
 
 let g:clang_format#command = 'clang-format-3.6'
 let g:clang_format#detect_style_file = 1

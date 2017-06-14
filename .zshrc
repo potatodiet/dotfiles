@@ -33,3 +33,4 @@ export PATH="$HOME/Workspace/scripts:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export TERM=xterm-256color
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

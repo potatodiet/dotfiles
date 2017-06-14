@@ -1,4 +1,4 @@
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 
 #source ~/.zshrc
 export NVM_DIR="$HOME/.nvm"

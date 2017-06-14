@@ -1,4 +1,4 @@
-sudo dnf install -y zsh
+sudo pacman -Syu --noconfirm zsh
 chsh -s /bin/zsh
 
 if [ ! -d ~/.zsh/zsh-autosuggestions ]; then

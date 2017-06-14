@@ -1,1 +1,1 @@
-sudo dnf install -y cmake clang
+sudo pacman -Syu --noconfirm -y cmake clang
