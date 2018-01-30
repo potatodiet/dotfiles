@@ -1,8 +1,7 @@
 #!/bin/bash
 
 ./git.sh
-./vim.sh
-./zsh.sh
+./nvim.sh
 ./rbenv.sh
 ./nvm.sh
 ./cpp.sh
@@ -13,4 +12,3 @@ if [ ! -f ~/.bundle/config ]; then
 
   ln -sfn $(readlink -f .bundle/config) $(readlink -f ~/.bundle/config)
 fi
-
