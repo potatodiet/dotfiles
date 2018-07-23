@@ -8,6 +8,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'dag/vim-fish', { 'for': 'fish' }
+
+Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 call plug#end()
 
 " Use 2 spaces instead of tab.
@@ -42,3 +45,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_rust_checkers = ['cargo']
+
+" Haskell
+let g:necoghc_enable_detailed_browse = 1
