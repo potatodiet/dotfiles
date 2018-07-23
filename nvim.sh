@@ -1,4 +1,4 @@
-sudo pacman -Syu --noconfirm neovim
+sudo pacman -Syu --noconfirm neovim python-neovim
 
 if [ ! -f ~/.config/nvim/init.vim ]; then
   mkdir -p ~/.config/nvim
