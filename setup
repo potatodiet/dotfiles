@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
 
-sudo pacman -Syu --noconfirm base base-devel curl stow
+sudo pacman -Syu --noconfirm --neded base base-devel curl stow
 
 stow/setup
 
 ./yay
 
-sudo pacman -S --noconfirm git neovim fish sway rust ruby crystal
+yay -S --noconfirm --needed git neovim fish sway i3blocks i3blocks-contrib \
+  rust ruby crystal
