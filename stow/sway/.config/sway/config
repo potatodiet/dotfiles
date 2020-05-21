@@ -1,0 +1,139 @@
+####################
+# Variables
+####################
+
+# Mod1 = Alt
+set $mod Mod1
+set $term termite
+set $menu bemenu-run -i | xargs swaymsg exec
+
+set $monitor_left "Unknown U2790B 0x000027F5"
+set $monitor_right "Unknown VIOTEK GN27D             "
+
+
+
+####################
+# General
+####################
+
+font pango:SourceCodePro-Regular 11
+
+bindsym --release $mod+y exec grim -g "$(slurp)" ~/Pictures/$(date +'%Y-%m-%d-%H%M%S.png')
+
+# Styling
+hide_edge_borders both
+default_border pixel 1
+
+# Wallpaper
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+input "1133:50489:Logitech_USB_Receiver_Mouse" {
+  # Turn off mouse acceleration
+  pointer_accel -1
+}
+
+
+
+####################
+# Displays
+####################
+
+output $monitor_left resolution 3840x2160@59.997002Hz position 0,0
+output $monitor_right resolution 2560x1440@144.003998Hz position 2560,0
+
+# Blury as fuck for XWayland
+output $monitor_left scale 1.5
+
+workspace 1 output $monitor_right
+workspace 2 output $monitor_right
+workspace 3 output $monitor_right
+workspace 4 output $monitor_right
+workspace 5 output $monitor_right
+workspace 6 output $monitor_left
+workspace 7 output $monitor_left
+workspace 8 output $monitor_left
+workspace 9 output $monitor_left
+workspace 0 output $monitor_left
+
+
+
+####################
+# Key bindings
+####################
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+bindsym $mod+x kill
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+bindsym $mod+a focus parent
+
+bindsym $mod+f fullscreen
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute && pkill -RTMIN+2 i3blocks
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute && pkill -RTMIN+2 i3blocks
+
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    position top
+
+    status_command i3blocks
+
+    colors {
+        statusline #ffffff
+        background #323232
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+include /etc/sway/config.d/*

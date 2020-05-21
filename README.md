@@ -1,9 +1,10 @@
-Matthin's dotfiles
-===============
+# My Dotfiles
 Collection of my personal dotfiles, and other commands to quickly get a new
-computer up and running. Specifically works with Arch Linux.
+Arch Linux distro running.
 
-Instructions
-==============
-* Manually install pacaur
-* ` ./setup `
+# Instructions
+* Install yay
+* Run `./setup`
+
+# Licensing
+Licensed under GPL-3.0-only.
