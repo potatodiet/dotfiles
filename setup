@@ -6,5 +6,5 @@ stow/setup
 
 ./yay
 
-yay -S --noconfirm --needed git neovim fish sway i3blocks i3blocks-contrib \
-  rust ruby crystal
+yay -S --noconfirm --needed git neovim fish sway bemenu-wlroots i3blocks \
+  i3blocks-contrib rust ruby crystal
