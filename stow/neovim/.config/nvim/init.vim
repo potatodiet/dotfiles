@@ -11,6 +11,7 @@ Plug 'dag/vim-fish', { 'for': 'fish' }
 Plug 'rhysd/vim-crystal', { 'for': 'crystal' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 "}}}
 
 call plug#end()
@@ -33,3 +34,5 @@ set background=dark
 colorscheme gruvbox
 
 cabbrev vsf vert sfind
+
+let g:rustfmt_autosave = 1
