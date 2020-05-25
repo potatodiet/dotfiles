@@ -6,6 +6,9 @@ call plug#begin('~/.vim/plugged')
 " Neovim theme
 Plug 'morhetz/gruvbox'
 
+" Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 "{{{ Language specific plugins
 Plug 'dag/vim-fish', { 'for': 'fish' }
 Plug 'rhysd/vim-crystal', { 'for': 'crystal' }

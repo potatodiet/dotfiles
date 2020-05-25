@@ -7,4 +7,7 @@ stow/setup
 ./yay
 
 yay -S --noconfirm --needed git neovim fish sway bemenu-wlroots i3blocks \
-  i3blocks-contrib rust ruby crystal
+  i3blocks-contrib rustup ruby crystal
+
+rustup default stable
+rustup component add rust-src # needed for autocompletion
