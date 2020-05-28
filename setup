@@ -11,3 +11,7 @@ yay -S --noconfirm --needed git neovim fish sway bemenu-wlroots i3blocks \
 
 rustup default stable
 rustup component add rust-src # needed for autocompletion
+
+# install vim-plug
+curl --create-dirs -fLo $HOME/.local/share/nvim/site/autoload/plug.vim \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
