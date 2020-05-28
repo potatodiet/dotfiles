@@ -1,7 +1,7 @@
 set foldmethod=marker
 
 "{{{ Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 " Neovim theme
 Plug 'morhetz/gruvbox'
