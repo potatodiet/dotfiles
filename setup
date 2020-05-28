@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-sudo pacman -Syu --noconfirm --neded base base-devel curl stow
+sudo pacman -Syu --noconfirm --needed base base-devel curl stow
 
 stow/setup
 
