@@ -8,3 +8,4 @@ set -x MOZ_ENABLE_WAYLAND 1
 set -x EDITOR nvim
 
 set PATH ~/.gem/ruby/2.7.0/bin $PATH
+set PATH ~/scripts $PATH
