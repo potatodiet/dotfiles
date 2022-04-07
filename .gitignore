@@ -1,1 +1,5 @@
-/stow/fish/.config/fish/fish_variables
+/ssh/.ssh/id_*
+/ssh/.ssh/known_hosts
+/ssh/.ssh/known_hosts.old
+/fish/.config/fish/fish_variables
+

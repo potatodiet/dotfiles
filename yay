@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-cd /tmp
-curl https://aur.archlinux.org/cgit/aur.git/snapshot/yay.tar.gz | tar zx
-cd yay
-makepkg -si --noconfirm

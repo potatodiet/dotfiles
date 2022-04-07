@@ -1,9 +1,6 @@
-# My Dotfiles
-Collection of my personal dotfiles, and other commands to quickly get a new
-Arch Linux distro running.
-
 # Instructions
-* Run `./setup`
+Run `stow --target ~/ PACKAGE_NAME` for each package you wish to use.
 
 # Licensing
 Licensed under GPL-3.0-only.
+

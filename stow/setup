@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-stow -t ~ -d stow neovim fish sway i3blocks
