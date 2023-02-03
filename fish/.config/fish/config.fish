@@ -1,8 +1,5 @@
-# Remove greeting message
-set fish_greeting
-
 eval (/opt/homebrew/bin/brew shellenv)
 
-# Used for Git's commit signing.
-set -x GPG_TTY (tty)
-
+fish_add_path ~/.cargo/bin
+fish_add_path ~/.dotnet/tools
+fish_add_path ~/Workspace/PotatoDiet/Released/scripts
